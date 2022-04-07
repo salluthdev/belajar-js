@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Hello World - JavaScript</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Belajar React JS</title>
 </head>
 <body>
-    <script>
-        console.log("Saya belajar JavaScript");
-        document.write("Hello World!");
-    </script>
+	<div id="app"></div>
+
+	<script>
+		const app = document.querySelector('#app');
+
+		const element = document.createElement('h1');
+		element.textContent = 'Hello World!';
+		element.className = 'heading-one';
+
+		app.appendChild(element);
+	</script>
 </body>
 </html>
